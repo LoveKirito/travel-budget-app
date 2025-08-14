@@ -7,73 +7,70 @@
     <meta name="description" content="智慧管理你的旅遊支出">
     <meta name="theme-color" content="#3B82F6">
     
-    <!-- PWA 設定 -->
-    <link rel="manifest" href="data:application/json;base64,ewogICJuYW1lIjogIuaXhemggumlseeulOeuoeePhumpr+eoi+WPs+OAiSIsCiAgInNob3J0X25hbWUiOiAi5peF6YCS6aW554GMCII7LAogICJkZXNjcmlwdGlvbiI6ICLmmarisZTnrqHnkIbkvaDnmoTml4XpgJLmlK/lh7oCTAogICJzdGFydF91cmwiOiAiLiIsCiAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIsCiAgImJhY2tncm91bmRfY29sb3IiOiAiI0ZGRkZGRiIsCiAgInRoZW1lX2NvbG9yIjogIiMzQjgyRjYiLAogICJpY29ucyI6IFsKICAgIHsKICAgICAgInNyYyI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUI0Yld4dWN6MGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TUM5emRtY2lJSGRwWkhSb1BTSXhOalFpSUdobGFXZG9kRDBpTVRZMElpQjJhV1YzUW05NFBTSXVJAKPS2J3SUlsNnUi0xzNGpKKvzTZ5KhbQUvqSTcgPFLmSIGZlUtAYUeS1MbElQeYSEv0laNMrVqyJJ1lgotMjM1ZUJwWlNXUjlwVXpZOEJzZGI3enB0M1hHWWZETFNMjEwQBAgpAZAa4BCAc0N6W1A4BFHUU4eEI2QLgEHU2PAS2gE1MhgZWEt4FaRODk3UUJLW6FfnQ2N4V1U9MhgZVTcxe1QUYNtUNVAIKVg5NGUULjWEd1RHWJBDcyolSJlGU1BwwUJlWTUNb0E1TYN1gVsUMOFZAZAUFGGEgb2L2I1QvAQR="
-ICAgICAgInNpemVzIjogIjE5MmgxOTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9LAogICAgewogICAgICAic3JjIjogImRhdGE6aW1hZ2Uvc3ZnK3htbDtiYXNlNjQsUEhOMlp5QjRiV3h1Y3owOFIZWEhmSWNpcExYZDNkeTUzTXk1dmNtY3ZNakF3TUM5emRtY2lJSGRwWkhSb1BTSXpOVFlpSUdobGFXZG9kRDBpTXpVMklpQjJhV1YzUW05NFBTSXVJAKNS2J3SUlsNnUi0xzNGpKKvzTZ5KhbQUvqSTcgPFLmSIGZlUtAYUeS1MbElQeYSEv0laNMrVqyJJ1lgotMjM1ZUJwWlNXUjlwVXpZOEJzZGI3enB0M1hHWWZETFNMjEwQBAgpAZAa4BCAc0N6W1A4BFHUU4eEI2QLgEHU2PAS2gE1MhgZWEt4FaRODk3UUJLW6FfnQ2N4V1U9MhgZVTcxe1QUYNtUNVAIKVg5NGUULjWEd1RHWJBDcyolSJlGU1BwwUJlWTUNb0E1TYN1gVsUMOFZAZAUFGGEgb2L2I1QvAQR="
-ICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9CiAgXQp9">
+    <!-- PWA 配置 -->
+    <link rel="manifest" href="data:application/json;charset=utf-8,%7B%22name%22%3A%22%E6%97%85%E9%81%8A%E9%A0%90%E7%AE%97%E7%AE%A1%E7%90%86%22%2C%22short_name%22%3A%22%E9%A0%90%E7%AE%97%E7%AE%A1%E7%90%86%22%2C%22description%22%3A%22%E6%99%BA%E6%85%A7%E7%AE%A1%E7%90%86%E4%BD%A0%E7%9A%84%E6%97%85%E9%81%8A%E6%94%AF%E5%87%BA%22%2C%22start_url%22%3A%22.%22%2C%22display%22%3A%22standalone%22%2C%22background_color%22%3A%22%23ffffff%22%2C%22theme_color%22%3A%22%233B82F6%22%2C%22orientation%22%3A%22portrait%22%2C%22scope%22%3A%22./%22%2C%22icons%22%3A%5B%7B%22src%22%3A%22data%3Aimage/svg%2Bxml%3Bbase64%2CPHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcng9IjQiIGZpbGw9IiMzNDk3RjYiLz48cGF0aCBkPSJNMTcuNSAxMlY4aC05YTEuNSAxLjUgMCAwIDEgMC0zaDl2MyIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik02IDZ2MTBhMS41IDEuNSAwIDAgMCAxLjUgMS41SDE5VjE1IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8%2BPGNpcmNsZSBjeD0iMTUiIGN5PSIxMiIgcj0iMSIgZmlsbD0id2hpdGUiLz48L3N2Zz4K%22%2C%22sizes%22%3A%22192x192%22%2C%22type%22%3A%22image/svg%2Bxml%22%7D%2C%7B%22src%22%3A%22data%3Aimage/svg%2Bxml%3Bbase64%2CPHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgcng9IjQiIGZpbGw9IiMzNDk3RjYiLz48cGF0aCBkPSJNMTcuNSAxMlY4aC05YTEuNSAxLjUgMCAwIDEgMC0zaDl2MyIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPjxwYXRoIGQ9Ik02IDZ2MTBhMS41IDEuNSAwIDAgMCAxLjUgMS41SDE5VjE1IiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8%2BPGNpcmNsZSBjeD0iMTUiIGN5PSIxMiIgcj0iMSIgZmlsbD0id2hpdGUiLz48L3N2Zz4K%22%2C%22sizes%22%3A%22512x512%22%2C%22type%22%3A%22image/svg%2Bxml%22%7D%5D%7D">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="旅遊預算管理">
     
-    <!-- Service Worker 註冊 -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            navigator.serviceWorker.register('data:application/javascript;base64,c2VsZi5hZGRFdmVudExpc3RlbmVyKCdpbnN0YWxsJywgZXZlbnQgPT4gewogIGNvbnNvbGUubG9nKCdTZXJ2aWNlIFdvcmtlciBpbnN0YWxsZWQnKTsKfSk7CgpzZWxmLmFkZEV2ZW50TGlzdGVuZXIoJ2ZldGNoJywgZXZlbnQgPT4gewogIC8vIEJhc2ljIGZldGNoIGhhbmRsaW5nCiAgZXZlbnQucmVzcG9uZFdpdGgoZmV0Y2goZXZlbnQucmVxdWVzdCkpOwp9KTs=')
-                .then(registration => console.log('SW registered'))
-                .catch(error => console.log('SW registration failed'));
-        }
-    </script>
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/18.2.0/umd/react.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/18.2.0/umd/react-dom.production.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/7.22.5/babel.min.js"></script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     
     <style>
-        body { margin: 0; padding: 0; font-family: system-ui, -apple-system, sans-serif; }
-        .install-prompt {
-            position: fixed;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #3B82F6;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 25px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-            z-index: 1000;
-            display: none;
+        body { 
+            margin: 0; 
+            padding: 0; 
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            background: #f8fafc;
         }
     </style>
 </head>
 <body>
     <div id="root"></div>
-    
-    <!-- 安裝提示 -->
-    <div id="install-prompt" class="install-prompt">
-        <button onclick="installApp()">📱 安裝到桌面</button>
-        <button onclick="dismissInstall()" style="margin-left: 10px; background: none; border: none; color: white;">✕</button>
-    </div>
 
     <script type="text/babel">
-        const { useState } = React;
+        const { useState, useEffect } = React;
         
-        // Lucide React Icons (simplified)
-        const PlusCircle = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg>;
-        const Trash2 = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M3 6h18M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>;
-        const AlertTriangle = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>;
-        const Wallet = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 12V7H5a2 2 0 0 1 0-4h14v4"/><path d="M3 5v14a2 2 0 0 0 2 2h16v-5"/><line x1="18" y1="12" x2="18" y2="12"/></svg>;
-        const TrendingDown = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>;
-        const RotateCcw = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 2.13-9.36L1 10"/></svg>;
-        const Download = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>;
-        const Upload = () => <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>;
+        // 簡化的圖示組件
+        const Icon = ({ name, size = 16 }) => {
+            const icons = {
+                plus: "M12 5v14m-7-7h14",
+                trash: "M3 6h18m-2 0v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6m3 0V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2",
+                warning: "M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z M12 9v4 M12 17h.01",
+                wallet: "M21 12V7H5a2 2 0 0 1 0-4h14v4 M3 5v14a2 2 0 0 0 2 2h16v-5 M18 12h.01",
+                trend: "M23 6l-9.5 9.5-5-5L1 18",
+                rotate: "M1 4v6h6 M3.51 15a9 9 0 1 0 2.13-9.36L1 10",
+                download: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4 M7 10l5 5 5-5 M12 15V3",
+                upload: "M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4 M17 8l-5-5-5 5 M12 3v12"
+            };
+            
+            return (
+                <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d={icons[name]} />
+                </svg>
+            );
+        };
 
         function TravelBudgetApp() {
+            // 從 localStorage 載入資料
             const [totalBudget, setTotalBudget] = useState(() => {
-                const saved = localStorage.getItem('travelBudget');
-                return saved ? JSON.parse(saved).totalBudget || 0 : 0;
+                try {
+                    const saved = localStorage.getItem('travelBudgetData');
+                    return saved ? JSON.parse(saved).totalBudget || 0 : 0;
+                } catch {
+                    return 0;
+                }
             });
             
             const [expenses, setExpenses] = useState(() => {
-                const saved = localStorage.getItem('travelBudget');
-                return saved ? JSON.parse(saved).expenses || [] : [];
+                try {
+                    const saved = localStorage.getItem('travelBudgetData');
+                    return saved ? JSON.parse(saved).expenses || [] : [];
+                } catch {
+                    return [];
+                }
             });
             
             const [newExpense, setNewExpense] = useState({
@@ -84,10 +81,10 @@ ICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9CiAg
 
             const categories = ['餐飲', '住宿', '交通', '購物', '娛樂', '其他'];
             
-            // 自動保存到 localStorage
-            React.useEffect(() => {
-                const data = { totalBudget, expenses };
-                localStorage.setItem('travelBudget', JSON.stringify(data));
+            // 自動保存資料
+            useEffect(() => {
+                const data = { totalBudget, expenses, lastSaved: new Date().toISOString() };
+                localStorage.setItem('travelBudgetData', JSON.stringify(data));
             }, [totalBudget, expenses]);
             
             const totalSpent = expenses.reduce((sum, expense) => sum + expense.amount, 0);
@@ -113,11 +110,12 @@ ICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9CiAg
             };
 
             const clearAllData = () => {
-                if (window.confirm('確定要清除所有資料嗎？此操作無法復原！')) {
+                if (confirm('確定要清除所有資料嗎？此操作無法復原！')) {
                     setTotalBudget(0);
                     setExpenses([]);
                     setNewExpense({ description: '', amount: '', category: '餐飲' });
-                    localStorage.removeItem('travelBudget');
+                    localStorage.removeItem('travelBudgetData');
+                    alert('資料已清除！');
                 }
             };
 
@@ -136,10 +134,10 @@ ICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9CiAg
                 const link = document.createElement('a');
                 link.href = url;
                 link.download = `旅遊預算_${new Date().toLocaleDateString('zh-TW').replace(/\//g, '')}.json`;
-                document.body.appendChild(link);
                 link.click();
-                document.body.removeChild(link);
                 URL.revokeObjectURL(url);
+                
+                alert('資料匯出完成！檔案已下載到你的裝置');
             };
 
             const importData = (event) => {
@@ -152,7 +150,7 @@ ICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9CiAg
                         const data = JSON.parse(e.target.result);
                         
                         if (data.totalBudget !== undefined && Array.isArray(data.expenses)) {
-                            if (window.confirm('匯入資料將覆蓋目前的所有資料，確定要繼續嗎？')) {
+                            if (confirm('匯入資料將覆蓋目前的所有資料，確定要繼續嗎？')) {
                                 setTotalBudget(data.totalBudget || 0);
                                 setExpenses(data.expenses || []);
                                 alert('資料匯入成功！');
@@ -180,74 +178,72 @@ ICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9CiAg
                 return 'safe';
             };
 
-            const warningConfig = {
-                danger: { color: 'text-red-600', bg: 'bg-red-50', border: 'border-red-200' },
-                warning: { color: 'text-yellow-600', bg: 'bg-yellow-50', border: 'border-yellow-200' },
-                safe: { color: 'text-green-600', bg: 'bg-green-50', border: 'border-green-200' }
+            const warningStyles = {
+                danger: 'text-red-600 bg-red-50 border-red-200',
+                warning: 'text-yellow-600 bg-yellow-50 border-yellow-200',
+                safe: 'text-green-600 bg-green-50 border-green-200'
             };
-
-            const currentWarning = warningConfig[getWarningLevel()];
 
             return (
                 <div className="max-w-md mx-auto bg-white min-h-screen">
                     {/* Header */}
                     <div className="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-6">
-                        <div className="flex items-center gap-2 mb-2">
-                            <Wallet />
+                        <div className="flex items-center gap-3 mb-2">
+                            <Icon name="wallet" size={24} />
                             <h1 className="text-xl font-bold">旅遊預算管理</h1>
                         </div>
-                        <p className="text-blue-100 text-sm">智慧管理你的旅遊支出</p>
+                        <p className="text-blue-100 text-sm">智慧管理你的旅遊支出 💰</p>
                     </div>
 
                     <div className="p-4 space-y-6">
                         {/* Budget Setting */}
-                        <div className="bg-gray-50 rounded-lg p-4">
+                        <div className="bg-gray-50 rounded-xl p-4 shadow-sm">
                             <label className="block text-sm font-medium text-gray-700 mb-2">
-                                設定總預算 (新台幣)
+                                💳 設定總預算 (新台幣)
                             </label>
                             <input
                                 type="number"
                                 value={totalBudget || ''}
                                 onChange={(e) => setTotalBudget(parseFloat(e.target.value) || 0)}
-                                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                                className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-lg"
                                 placeholder="輸入你的總預算"
                             />
                         </div>
 
                         {/* Budget Overview */}
                         {totalBudget > 0 && (
-                            <div className={`rounded-lg p-4 border ${currentWarning.border} ${currentWarning.bg}`}>
+                            <div className={`rounded-xl p-4 border shadow-sm ${warningStyles[getWarningLevel()]}`}>
                                 <div className="flex items-center gap-2 mb-3">
-                                    {budgetUsedPercentage >= 75 && <AlertTriangle />}
-                                    <h3 className="font-semibold text-gray-800">預算總覽</h3>
+                                    {budgetUsedPercentage >= 75 && <Icon name="warning" />}
+                                    <h3 className="font-semibold text-gray-800">📊 預算總覽</h3>
                                 </div>
                                 
-                                <div className="space-y-2">
+                                <div className="space-y-3">
                                     <div className="flex justify-between text-sm">
                                         <span>總預算：</span>
-                                        <span className="font-medium">NT${totalBudget.toLocaleString()}</span>
+                                        <span className="font-bold text-lg">NT${totalBudget.toLocaleString()}</span>
                                     </div>
                                     <div className="flex justify-between text-sm">
                                         <span>已支出：</span>
-                                        <span className="font-medium">NT${totalSpent.toLocaleString()}</span>
+                                        <span className="font-bold text-lg text-red-600">NT${totalSpent.toLocaleString()}</span>
                                     </div>
                                     <div className="flex justify-between text-sm">
                                         <span>剩餘：</span>
-                                        <span className={`font-medium ${remainingBudget < 0 ? 'text-red-600' : 'text-green-600'}`}>
+                                        <span className={`font-bold text-lg ${remainingBudget < 0 ? 'text-red-600' : 'text-green-600'}`}>
                                             NT${remainingBudget.toLocaleString()}
                                         </span>
                                     </div>
                                 </div>
 
                                 {/* Progress Bar */}
-                                <div className="mt-3">
-                                    <div className="flex justify-between text-xs text-gray-600 mb-1">
+                                <div className="mt-4">
+                                    <div className="flex justify-between text-xs text-gray-600 mb-2">
                                         <span>預算使用率</span>
-                                        <span>{budgetUsedPercentage.toFixed(1)}%</span>
+                                        <span className="font-medium">{budgetUsedPercentage.toFixed(1)}%</span>
                                     </div>
-                                    <div className="w-full bg-gray-200 rounded-full h-2">
+                                    <div className="w-full bg-gray-200 rounded-full h-3 overflow-hidden">
                                         <div 
-                                            className={`h-2 rounded-full transition-all duration-300 ${
+                                            className={`h-3 rounded-full transition-all duration-500 ${
                                                 budgetUsedPercentage >= 90 ? 'bg-red-500' : 
                                                 budgetUsedPercentage >= 75 ? 'bg-yellow-500' : 'bg-green-500'
                                             }`}
@@ -257,9 +253,9 @@ ICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9CiAg
                                 </div>
 
                                 {budgetUsedPercentage >= 75 && (
-                                    <div className={`mt-3 text-sm ${currentWarning.color}`}>
+                                    <div className={`mt-3 text-sm font-medium ${getWarningLevel() === 'danger' ? 'text-red-600' : 'text-yellow-600'}`}>
                                         {budgetUsedPercentage >= 90 ? 
-                                            '⚠️ 預算即將用完，請控制支出！' : 
+                                            '🚨 預算即將用完，請控制支出！' : 
                                             '⚠️ 預算使用率較高，請注意控制支出'
                                         }
                                     </div>
@@ -268,65 +264,67 @@ ICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9CiAg
                         )}
 
                         {/* Data Management */}
-                        <div className="bg-gray-50 rounded-lg p-4">
-                            <h3 className="font-semibold text-gray-800 mb-3">資料管理</h3>
+                        <div className="bg-gray-50 rounded-xl p-4 shadow-sm">
+                            <h3 className="font-semibold text-gray-800 mb-3">🗂️ 資料管理</h3>
                             
-                            <div className="grid grid-cols-2 gap-2">
-                                <button
-                                    onClick={exportData}
-                                    className="flex items-center justify-center gap-2 bg-green-500 text-white p-2 rounded-lg hover:bg-green-600 transition-colors text-sm"
-                                >
-                                    <Download />
-                                    匯出紀錄
-                                </button>
+                            <div className="grid grid-cols-1 gap-2">
+                                <div className="flex gap-2">
+                                    <button
+                                        onClick={exportData}
+                                        className="flex-1 flex items-center justify-center gap-2 bg-green-500 text-white p-3 rounded-lg hover:bg-green-600 transition-colors text-sm font-medium"
+                                    >
+                                        <Icon name="download" />
+                                        匯出紀錄
+                                    </button>
+                                    
+                                    <label className="flex-1 flex items-center justify-center gap-2 bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600 transition-colors text-sm font-medium cursor-pointer">
+                                        <Icon name="upload" />
+                                        匯入紀錄
+                                        <input
+                                            type="file"
+                                            accept=".json"
+                                            onChange={importData}
+                                            className="hidden"
+                                        />
+                                    </label>
+                                </div>
                                 
-                                <label className="flex items-center justify-center gap-2 bg-blue-500 text-white p-2 rounded-lg hover:bg-blue-600 transition-colors text-sm cursor-pointer">
-                                    <Upload />
-                                    匯入紀錄
-                                    <input
-                                        type="file"
-                                        accept=".json"
-                                        onChange={importData}
-                                        className="hidden"
-                                    />
-                                </label>
+                                <button
+                                    onClick={clearAllData}
+                                    className="w-full flex items-center justify-center gap-2 bg-red-500 text-white p-3 rounded-lg hover:bg-red-600 transition-colors text-sm font-medium"
+                                >
+                                    <Icon name="rotate" />
+                                    清除所有資料
+                                </button>
                             </div>
-                            
-                            <button
-                                onClick={clearAllData}
-                                className="w-full mt-2 flex items-center justify-center gap-2 bg-red-500 text-white p-2 rounded-lg hover:bg-red-600 transition-colors text-sm"
-                            >
-                                <RotateCcw />
-                                清除所有資料
-                            </button>
                         </div>
 
                         {/* Add Expense */}
-                        <div className="bg-gray-50 rounded-lg p-4">
-                            <h3 className="font-semibold text-gray-800 mb-3">新增支出</h3>
+                        <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-4 shadow-sm border border-blue-100">
+                            <h3 className="font-semibold text-gray-800 mb-3">➕ 新增支出</h3>
                             
                             <div className="space-y-3">
                                 <input
                                     type="text"
                                     value={newExpense.description}
                                     onChange={(e) => setNewExpense({...newExpense, description: e.target.value})}
-                                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     placeholder="支出描述 (如：午餐、計程車費)"
                                 />
                                 
-                                <div className="flex gap-2">
+                                <div className="flex gap-3">
                                     <input
                                         type="number"
                                         value={newExpense.amount}
                                         onChange={(e) => setNewExpense({...newExpense, amount: e.target.value})}
-                                        className="flex-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                                        className="flex-1 p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                         placeholder="金額"
                                     />
                                     
                                     <select
                                         value={newExpense.category}
                                         onChange={(e) => setNewExpense({...newExpense, category: e.target.value})}
-                                        className="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500"
+                                        className="p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
                                     >
                                         {categories.map(cat => (
                                             <option key={cat} value={cat}>{cat}</option>
@@ -336,9 +334,10 @@ ICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9CiAg
                                 
                                 <button
                                     onClick={addExpense}
-                                    className="w-full bg-blue-500 text-white p-3 rounded-lg hover:bg-blue-600 transition-colors flex items-center justify-center gap-2"
+                                    disabled={!newExpense.description || !newExpense.amount}
+                                    className="w-full bg-gradient-to-r from-blue-500 to-purple-600 text-white p-3 rounded-lg hover:from-blue-600 hover:to-purple-700 transition-all flex items-center justify-center gap-2 font-medium disabled:opacity-50 disabled:cursor-not-allowed"
                                 >
-                                    <PlusCircle />
+                                    <Icon name="plus" />
                                     新增支出
                                 </button>
                             </div>
@@ -346,16 +345,16 @@ ICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9CiAg
 
                         {/* Category Summary */}
                         {expenses.length > 0 && (
-                            <div className="bg-gray-50 rounded-lg p-4">
-                                <h3 className="font-semibold text-gray-800 mb-3">分類統計</h3>
-                                <div className="grid grid-cols-2 gap-2">
+                            <div className="bg-gray-50 rounded-xl p-4 shadow-sm">
+                                <h3 className="font-semibold text-gray-800 mb-3">📈 分類統計</h3>
+                                <div className="grid grid-cols-2 gap-3">
                                     {categories.map(category => {
                                         const categoryTotal = getCategoryTotal(category);
                                         if (categoryTotal === 0) return null;
                                         return (
-                                            <div key={category} className="bg-white p-2 rounded border text-sm">
-                                                <div className="font-medium">{category}</div>
-                                                <div className="text-blue-600">NT${categoryTotal.toLocaleString()}</div>
+                                            <div key={category} className="bg-white p-3 rounded-lg border border-gray-200 text-center">
+                                                <div className="text-sm font-medium text-gray-600">{category}</div>
+                                                <div className="text-lg font-bold text-blue-600">NT${categoryTotal.toLocaleString()}</div>
                                             </div>
                                         );
                                     })}
@@ -367,55 +366,65 @@ ICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9CiAg
                         {expenses.length > 0 && (
                             <div className="space-y-3">
                                 <h3 className="font-semibold text-gray-800 flex items-center gap-2">
-                                    <TrendingDown />
-                                    支出記錄
+                                    <Icon name="trend" />
+                                    📝 支出記錄 ({expenses.length}筆)
                                 </h3>
                                 
-                                {expenses.slice().reverse().map(expense => (
-                                    <div key={expense.id} className="bg-white border border-gray-200 rounded-lg p-3">
-                                        <div className="flex justify-between items-start">
-                                            <div className="flex-1">
-                                                <div className="font-medium text-gray-800">{expense.description}</div>
-                                                <div className="text-sm text-gray-500 flex gap-3">
-                                                    <span>{expense.category}</span>
-                                                    <span>{expense.date}</span>
+                                <div className="space-y-2">
+                                    {expenses.slice().reverse().slice(0, 10).map(expense => (
+                                        <div key={expense.id} className="bg-white border border-gray-200 rounded-lg p-3 hover:shadow-md transition-shadow">
+                                            <div className="flex justify-between items-start">
+                                                <div className="flex-1">
+                                                    <div className="font-medium text-gray-800">{expense.description}</div>
+                                                    <div className="text-sm text-gray-500 flex gap-3 mt-1">
+                                                        <span>🏷️ {expense.category}</span>
+                                                        <span>📅 {expense.date}</span>
+                                                    </div>
+                                                </div>
+                                                <div className="flex items-center gap-2">
+                                                    <span className="font-bold text-red-600">
+                                                        -NT${expense.amount.toLocaleString()}
+                                                    </span>
+                                                    <button
+                                                        onClick={() => deleteExpense(expense.id)}
+                                                        className="text-red-500 hover:text-red-700 p-1 hover:bg-red-50 rounded transition-colors"
+                                                    >
+                                                        <Icon name="trash" />
+                                                    </button>
                                                 </div>
                                             </div>
-                                            <div className="flex items-center gap-2">
-                                                <span className="font-semibold text-red-600">
-                                                    -NT${expense.amount.toLocaleString()}
-                                                </span>
-                                                <button
-                                                    onClick={() => deleteExpense(expense.id)}
-                                                    className="text-red-500 hover:text-red-700 p-1"
-                                                >
-                                                    <Trash2 />
-                                                </button>
-                                            </div>
                                         </div>
-                                    </div>
-                                ))}
+                                    ))}
+                                    
+                                    {expenses.length > 10 && (
+                                        <div className="text-center text-gray-500 text-sm p-2">
+                                            顯示最新10筆記錄，共{expenses.length}筆
+                                        </div>
+                                    )}
+                                </div>
                             </div>
                         )}
 
                         {expenses.length === 0 && totalBudget > 0 && (
-                            <div className="text-center py-8 text-gray-500">
-                                <Wallet />
-                                <p>還沒有支出記錄</p>
+                            <div className="text-center py-12 text-gray-500">
+                                <div className="text-4xl mb-3">💰</div>
+                                <p className="text-lg">還沒有支出記錄</p>
                                 <p className="text-sm">開始記錄你的第一筆支出吧！</p>
                             </div>
                         )}
 
-                        {/* PWA Notice */}
-                        <div className="bg-blue-50 border border-blue-200 rounded-lg p-3 text-sm">
-                            <div className="flex items-start gap-2">
-                                <div className="text-blue-700">
-                                    <p className="font-medium">📱 PWA版本優勢</p>
-                                    <p className="text-xs mt-1">
-                                        • 可安裝到桌面，像原生App一樣使用<br/>
-                                        • 資料自動保存到手機存儲<br/>
-                                        • 支援離線使用
-                                    </p>
+                        {/* App Info */}
+                        <div className="bg-gradient-to-br from-green-50 to-blue-50 border border-green-200 rounded-xl p-4 text-sm">
+                            <div className="flex items-start gap-3">
+                                <div className="text-2xl">📱</div>
+                                <div className="text-green-700">
+                                    <p className="font-medium">PWA版本特色</p>
+                                    <ul className="text-xs mt-2 space-y-1">
+                                        <li>✅ 可安裝到手機桌面</li>
+                                        <li>✅ 資料自動保存到裝置</li>
+                                        <li>✅ 支援離線使用</li>
+                                        <li>✅ 快速啟動，如原生App</li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -428,38 +437,40 @@ ICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICB9CiAg
     </script>
 
     <script>
-        // PWA 安裝邏輯
-        let deferredPrompt;
-        const installPrompt = document.getElementById('install-prompt');
-        
-        window.addEventListener('beforeinstallprompt', (e) => {
-            e.preventDefault();
-            deferredPrompt = e;
-            installPrompt.style.display = 'block';
-        });
-
-        function installApp() {
-            if (deferredPrompt) {
-                deferredPrompt.prompt();
-                deferredPrompt.userChoice.then((choiceResult) => {
-                    if (choiceResult.outcome === 'accepted') {
-                        console.log('PWA 安裝成功');
-                    }
-                    deferredPrompt = null;
-                    installPrompt.style.display = 'none';
-                });
-            }
+        // 註冊 Service Worker 以支援PWA功能
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                // 創建一個最小的 Service Worker
+                const swCode = `
+                    self.addEventListener('install', (event) => {
+                        console.log('Service Worker installing');
+                        self.skipWaiting();
+                    });
+                    
+                    self.addEventListener('activate', (event) => {
+                        console.log('Service Worker activating');
+                        event.waitUntil(self.clients.claim());
+                    });
+                    
+                    self.addEventListener('fetch', (event) => {
+                        event.respondWith(fetch(event.request));
+                    });
+                `;
+                
+                const blob = new Blob([swCode], { type: 'application/javascript' });
+                const swUrl = URL.createObjectURL(blob);
+                
+                navigator.serviceWorker.register(swUrl)
+                    .then((registration) => {
+                        console.log('SW registered: ', registration);
+                        URL.revokeObjectURL(swUrl);
+                    })
+                    .catch((registrationError) => {
+                        console.log('SW registration failed: ', registrationError);
+                        URL.revokeObjectURL(swUrl);
+                    });
+            });
         }
-
-        function dismissInstall() {
-            installPrompt.style.display = 'none';
-        }
-
-        // 安裝後隱藏提示
-        window.addEventListener('appinstalled', () => {
-            installPrompt.style.display = 'none';
-            console.log('PWA 已安裝');
-        });
     </script>
 </body>
 </html>
